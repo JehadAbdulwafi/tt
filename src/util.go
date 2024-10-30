@@ -25,7 +25,7 @@ func init() {
 }
 
 type cell struct {
-	c	  rune
+	c     rune
 	style tcell.Style
 }
 
@@ -218,5 +218,5 @@ func readResource(typ, name string) []byte {
 		}
 	}
 
-	return readPackedFile(filepath.Join(typ, name))
+	return readPackedFile(typ + "/" + name)
 }

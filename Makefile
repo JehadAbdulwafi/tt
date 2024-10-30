@@ -3,7 +3,7 @@ PREFIX := /usr/local
 
 .PHONY: all
 all:
-	go build -o bin/tt src/*.go
+	go build -o bin/tt.exe src/*.go
 
 .PHONY: install
 install:
